@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "python.h"
 
 /**
  * print_python_list_info - function to print python info
