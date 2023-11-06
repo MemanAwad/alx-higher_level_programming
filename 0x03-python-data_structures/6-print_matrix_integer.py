@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             k += 1
             if a > k:
-                print("{} " .format(j), end=" ")
+                print("{:d} " .format(j), end=" ")
             else:
-                print("{}" .format(j), end="")
+                print("{:d}" .format(j), end="")
         print()
