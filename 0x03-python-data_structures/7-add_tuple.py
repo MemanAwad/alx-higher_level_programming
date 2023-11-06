@@ -6,16 +6,20 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if len1 == 0:
         x, y = 0, 0
     elif len1 == 1:
-        x, y = tuple_a[0], 0
+        x = tuple_a[0]
+        y = 0
     else:
-        x, y = tuple_a[0], tuple_a[1]
+        x = tuple_a[0]
+        y = tuple_a[1]
     # second tuple
     if len2 == 0:
         w, z = 0, 0
     elif len2 == 1:
-        w, z = tuple_b[0], 0
+        w = tuple_b[0]
+        z = 0
     else:
-        w, z = tuple_b[0], tuple_b[1]
+        w = tuple_b[0]
+        z = tuple_b[1]
     # result tuple
     tuple_c = (x+w, z+y)
-    return(tuple_c)
+    return (tuple_c)
