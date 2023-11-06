@@ -16,6 +16,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         w, z = tuple_b[0], 0
     else:
         w, z = tuple_b[0], tuple_b[1]
-
+    # result tuple
     tuple_c = (x+w, z+y)
     return(tuple_c)
