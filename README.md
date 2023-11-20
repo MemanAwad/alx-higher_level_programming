@@ -1,1 +1,1 @@
-this is higher programing level language repo
+This directot work with python try and except
