@@ -1,1 +1,1 @@
-This directot work with python try and except
+This repostiory contains program that works with python programming language
