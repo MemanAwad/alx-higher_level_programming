@@ -26,6 +26,10 @@ class Square:
             print("size must be an integer")
 
     def area(self):
-        """ Function to coount the area of the square"""
+        """ Function to coount the area of the square
+
+        Returns:
+            the calculated size of the area"""
+
         return (self.__size * self.__size)
 
