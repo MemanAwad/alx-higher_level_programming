@@ -28,13 +28,11 @@ class Square:
     def size(self, value):
         """ function to set the size"""
 
-        try:
-            if (value < 0):
-                raise ValueError("size must be >= 0")
-            else:
-                self.__size = value
-        except TypeError:
-            print("size must be an integer")
+        self.__size = value
+        if type(value) != int:
+            raise TypeError("size must be an integer")
+        if (value < 0):
+            raise ValueError("size must be >= 0")
 
     def area(self):
         """ Function to coount the area of the square
