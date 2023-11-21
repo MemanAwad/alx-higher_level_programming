@@ -15,11 +15,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """ initializer of the default size of the object
-        and the deafualt values of the position
+        and the deafualt values of the position"""
 
-        Args:
-            size (str): the size of the square.
-            position(int, tuble): the position of the square"""
         self.__size = size
         self.__position = position
 
