@@ -1,1 +1,1 @@
-This repostiory contains program that works with python programming language
+this dirctory contain python pprograms
