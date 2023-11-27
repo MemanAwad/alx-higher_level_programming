@@ -6,9 +6,6 @@
 class Rectangle:
     """ this class is going to define a reactangle"""
 
-    __width = 0
-    __height = 0
-
     def __init__(self, width=0, height=0):
         """ the init method"""
         self.__height = height
