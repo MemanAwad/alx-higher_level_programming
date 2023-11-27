@@ -13,9 +13,8 @@ class Rectangle:
         """ the init method"""
         self.__height = height
         self.__width = width
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
-    
     @property
     def width(self):
         """ return the width of the rectangle"""
@@ -60,7 +59,7 @@ class Rectangle:
             return 0
         else:
             return ((self.__width * 2) + (self.__height * 2))
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ funtion that compare betwwen 2 rectangle """
@@ -84,7 +83,7 @@ class Rectangle:
         """ it will delete the instance of the class"""
 
         print("Bye rectangle...")
-        type(self).number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
 
     def __str__(self):
         """ return string of a rectangle"""
@@ -106,4 +105,3 @@ class Rectangle:
         strr = "Rectangle(" + str(self.__width) + ", "
         strr += str(self.__height) + ")"
         return strr
-
