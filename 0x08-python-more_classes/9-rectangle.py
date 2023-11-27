@@ -13,7 +13,7 @@ class Rectangle:
         """ the init method"""
         self.__height = height
         self.__width = width
-        Rectangle.number_of_instances += 1
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -57,8 +57,7 @@ class Rectangle:
 
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            return ((self.__width * 2) + (self.__height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -77,13 +76,13 @@ class Rectangle:
     def square(cls, size=0):
         """returns a new Rectangle instance with width == height == size"""
 
-        return Rectangle(size, size)
+        return cls(size, size)
 
     def __del__(self):
         """ it will delete the instance of the class"""
 
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
 
     def __str__(self):
         """ return string of a rectangle"""
