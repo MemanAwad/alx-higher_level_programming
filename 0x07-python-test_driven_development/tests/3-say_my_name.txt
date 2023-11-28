@@ -1,6 +1,6 @@
-The devide matrix module
+The say full name module
 =======================
-Using: it will devide all elemenr oftwo matrix
+Using: it will print the full name
 ==========================================
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
@@ -11,10 +11,10 @@ My name is John Smith
 >>> say_my_name("Bob")
 My name is Bob 
 
->>> say_my_name(12, "smith")
+>>> say_my_name(12, "White")
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("roy", 13)
+>>> say_my_name("White", 12)
 Traceback (most recent call last):
 TypeError: last_name must be a string
