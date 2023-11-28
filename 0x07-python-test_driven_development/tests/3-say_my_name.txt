@@ -1,0 +1,20 @@
+The devide matrix module
+=======================
+Using: it will devide all elemenr oftwo matrix
+==========================================
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+start using it:
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+>>> say_my_name("Bob")
+My name is Bob 
+
+>>> say_my_name(12, "smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("roy", 13)
+Traceback (most recent call last):
+TypeError: last_name must be a string
