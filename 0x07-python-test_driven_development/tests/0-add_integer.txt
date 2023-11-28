@@ -1,0 +1,56 @@
+The add_integet module
+=======================
+Using: it will count the sum of 2 integers
+==========================================
+>>> add_integer = __import__('0-add_integer').add_integer
+
+start using it:
+add two positive values.
+>>> add_integer(1, 1)
+2
+
+add two negative values.
+>>> add_integer(-2, -2)
+-4
+
+add negative and positive values
+>>> add_integer(1, -1)
+0
+
+add two float values
+>>> add_integer(3.5, 3.5)
+6
+
+add float and integers values
+>>> add_integer(4.4, 4)
+8
+
+add integer and float
+>>> add_integer(3, 4.4)
+7
+
+add undifined value
+>>> add_integer(a, 6)
+Traceback (most recent call last):
+NameError: name 'a' is not defined
+
+add one integer
+>>> add_integer(2)
+100
+
+add string and float
+>>> add_integer("a", 2.5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+add integer and string
+>>> add_integer(2, "b")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+add infinite float to an integer
+>>> a = float("inf")
+>>> b = 3
+>>> add_integer(a, b)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
