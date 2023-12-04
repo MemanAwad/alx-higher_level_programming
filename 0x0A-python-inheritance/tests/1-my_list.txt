@@ -1,0 +1,48 @@
+The '' 1-my_lit'' module
+==========================
+
+using ''MyList''
+==========================
+
+first import the function for the module:
+	>>> MyList = __import__('1-my_list').MyList
+
+check for normal work:
+	>>> my_list = MyList()
+	>>> my_list.append(5)
+	>>> my_list.append(4)
+	>>> my_list.append(1)
+	>>> print(my_list)
+	[5, 4, 1]
+	>>> my_list.print_sorted()
+	[1, 4, 5]
+	>>> print(my_list)
+	[5, 4, 1]
+
+make a positive number list:
+	>>> my_list = MyList()
+	>>> my_list.append(4)
+	>>> my_list.append(3)
+	>>> my_list.append(2)
+	>>> my_list.append(1)
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4]
+
+add repeating number:
+	>>> my_list = MyList()
+        >>> my_list.append(3)
+        >>> my_list.append(4)
+        >>> my_list.append(4)
+	>>> my_list.print_sorted()
+	[3, 4, 4]
+
+make list contain one number:
+	>>> my_list = MyList()
+	>>> my_list.append(5)
+	>>> my_list.print_sorted()
+	[5]
+
+check the type:
+	>>> my_list = MyList()
+	>>> type(my_list.print_sorted)
+	<class 'method'>
