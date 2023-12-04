@@ -1,0 +1,15 @@
+The '' 7-base_geometry'' module
+==========================
+
+using ''BaseGeometry''
+==========================
+
+first import the function for the module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+using the class:
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("strinng", "22")
+	Traceback (most recent call last):
+	TypeError: strinng must be an integer
