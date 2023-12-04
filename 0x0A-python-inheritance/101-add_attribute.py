@@ -4,8 +4,7 @@
 
 def add_attribute(obj, name, value):
     """ add attribute to object method"""
-
-    try:
-        setattr(obj, name, value)
-    except Exception:
+    
+    if not hasattr(obj, "__dict__")
         raise TypeError("can't add new attribute")
+    setattr(obj, name, value)
