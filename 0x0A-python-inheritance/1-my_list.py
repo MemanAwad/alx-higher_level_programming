@@ -2,7 +2,7 @@
 """drived class"""
 
 class MyList(list):
-    """ my lit class"""
+    """ my list class"""
     
     def print_sorted(self):
         print(sorted(self))
