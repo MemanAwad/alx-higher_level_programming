@@ -3,7 +3,15 @@
 
 
 def class_to_json(obj):
-    """class to json module"""
+    """class to json module
+     Returns the dictionary description with simple data structures:
+    - list
+    - dictionary
+    - string
+    - integer
+    - boolean
+    """
+
     attr = {}
     for key in obj.__dict__:
         value = getattr(obj, key)
