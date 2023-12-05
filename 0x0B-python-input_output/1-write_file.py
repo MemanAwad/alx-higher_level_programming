@@ -5,6 +5,5 @@
 def write_file(filename="", text=""):
     """function to write in a file"""
 
-    with open(filename , "w") as f1:
+    with open(filename, "w") as f1:
         return (f1.write(text))
-
