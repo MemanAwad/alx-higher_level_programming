@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""json module"""
 
 
 import json
-"""json module"""
 
 
 def to_json_string(my_obj):
