@@ -1,10 +1,9 @@
 #!/usr/bin//python3
-""" json class module"""
+""" ''class_to_json'' module"""
 
 
 def class_to_json(obj):
     """class to json module"""
-
     attr = {}
     for key in obj.__dict__:
         value = getattr(obj, key)
