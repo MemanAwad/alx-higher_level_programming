@@ -1,6 +1,6 @@
--- Lists all shows contained in the database hbtn_0d_tvshows.
-SELECT s.`title`, g.`genre_id`
-	FROM `tv_shows` AS sh
-		LEFT JOIN `tv_show_genres` AS gen
-		ON sh.`id` = gen.`show_id`
-	ORDER BY sh.`title`, gen.`genre_id`;
+-- List all shows with their respective genre IDs
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows
+LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
+
