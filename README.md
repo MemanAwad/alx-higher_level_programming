@@ -1,1 +1,1 @@
-this dirctory contain python pprograms
+more aql and qurieis
