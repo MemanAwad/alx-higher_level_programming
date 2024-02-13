@@ -1,8 +1,4 @@
 #!/usr/bin/node
-if (process.argv.length > 2) {
-  for (let i = 2; i < process.argv.length; i++) {
-    console.log(process.argv[i]);
-  }
-} else {
-  console.log('No argument');
-}
+const var1 = process.argv[2];
+const var2 = process.argv[3];
+console.log(`${var1} is ${var2}`);
