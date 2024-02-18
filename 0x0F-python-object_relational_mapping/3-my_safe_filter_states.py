@@ -15,7 +15,7 @@ if __name__ == "__main__":
     )
     cur = db.cursor()
     sql_query = "SELECT * FROM states WHERE name=%s"
-    cur.execute(sql_query, (sys.argn[4],))
+    cur.execute(sql_query, (sys.argv[4],))
     result = cur.fetchall()
     for row in result:
         print(row)
