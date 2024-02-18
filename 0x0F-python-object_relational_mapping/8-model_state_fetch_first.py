@@ -23,6 +23,6 @@ if __name__ == "__main__":
     if query_state is None:
         print("Nothing")
     else:
-        print("{}:{}".format(query_state.id, query_state.name))
+        print("{}: {}".format(query_state.id, query_state.name))
 
     session.close()
